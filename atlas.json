@@ -1,4 +1,4 @@
 {
-  "files": [01-brd.html],
+  "files": ["01-brd.html"],
   "theme": "oreillymedia/oreilly_brd_theme"
 }
