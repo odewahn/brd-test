@@ -52,7 +52,6 @@
 		<li style="box-sizing: border-box;">If a user is in a level 2 section that includes a level 3 subsection, she should be able to promote the level 2 section heading to a level 1 heading and the result should be that the level 3 subsection becomes a level 2 subsection. Similarly, she should be able to demote the level 2 section to a level 3, and the level 3 subsection should become a level 4 (assuming level 4s are allowed). She should NOT be allowed to change a level 2 section to a level 4 section, as doing so would break the document structure.</li>
 	</ul>
 	</li>
-	<li style="box-sizing: border-box;"><span style="font-size: 17px; line-height: 1.5em;"><strong>Remove &quot;heading&quot; and &quot;subhead&quot; from drop-down list.</strong> At present, a user can select &quot;heading&quot; and &quot;subhead&quot; in the drop-down &quot;insert&quot; menu. But selecting these styles can introduce errors to the document structure. Given the ease of introducing errors in document structure by using these option, we should question their usefulness.</span></li>
 	<li style="box-sizing: border-box;"><span style="font-size: 17px; line-height: 1.5em;"><strong>It should be easy to move around block elements in general without jumping into the code editor.</strong> Users will want to move paragraphs, tables, figures, sections, and other block elements. The editor should support these changes and help avoid breaking document structure.</span>
 	<ul>
 		<li style="box-sizing: border-box;"><span style="font-size: 17px; line-height: 1.5em;">​</span><span style="font-size: 17px; line-height: 1.5em;">&nbsp;User should be able to &quot;grab&quot; a figure, table, list, or admonition, etc., and easily drag it to a new location (or copy/paste). Atlas should make this easy by intelligently grouping figure/caption, table/caption, items in a list, etc., so that they can be moved as a unit.</span></li>
@@ -64,13 +63,20 @@
 		<li style="box-sizing: border-box;"><span style="font-size: 17px; line-height: 1.5em;">In the current document, you might imagine each block style definition (paragraph, bullet list item, code block, heading1, chapter title, figure, figure-caption, etc.) appearing in a row to the left of the content. (I would recommend doing this in an unobtrusive way, to make it less distracting...or even give users the ability to toggle this information on/off). It would give the ability to quickly scan the column of information to check the structure and correctness of block styling. It would be ideal to be able to click on such a term and be able to change it, in just the same way you could if you were to instead highlight the content itself.</span></li>
 		<li style="box-sizing: border-box;"><span style="font-size: 17px; line-height: 1.5em;">Information on both section level and block style should be given. Again, it would be a great feature to be able to manipulate section hierarchy by clicking on and changing these.&nbsp;</span><span style="font-size: 17px; line-height: 1.5em;">You might see something like this for example:</span></li>
 		<li style="box-sizing: border-box;"><img alt="Alt Text" class="iblock-stylespng" src="block-styles.png" style="font-size: 17px; line-height: 1.5em;" /></li>
-		<li>In the example image above, you might be able to click on the first &quot;Section 1&quot; tag and see that all of the tags for the elements under this section become highlighted. Or you might be able to &quot;grab&quot; the &quot;Section 1&quot; tag and move the whole section, or promote/demote, copy, or delete it. Or imagine clicking on &quot;para&quot; to the left of the line &quot;Dan Fauxsmith, Publishing Services,&quot; and then clicking on &quot;B&quot; to make the whole thing bold, or on the bulleted list icon to change the line to a bullet item.</li>
+		<li>In the example image above, you should be able to click on the first &quot;Section 1&quot; tag and see that all of the tags for the elements under this section become highlighted in some way.
+		<ul>
+			<li>Another example: you might be able to select the &quot;Section 1&quot; tag and move the whole section, or promote/demote, copy, or delete it.</li>
+			<li>Another example: &nbsp;clicking on &quot;para&quot; to the left of the line &quot;Dan Fauxsmith, Publishing Services,&quot; and then clicking on &quot;B&quot; to make the whole thing bold, or click on the bulleted list icon to change the line to a bullet item, etc.</li>
+		</ul>
+		</li>
 	</ul>
 	</li>
 </ul>
 </section>
 
-<p style="box-sizing: border-box;">&nbsp;</p>
+<ul>
+	<li style="box-sizing: border-box;"><span style="font-size: 17px; line-height: 1.5em;"><strong>Remove &quot;heading&quot; and &quot;subhead&quot; from drop-down list.</strong>&nbsp;At present, a user can select &quot;heading&quot; and &quot;subhead&quot; in the drop-down &quot;insert&quot; menu. But selecting these styles can introduce errors to the document structure. Given the ease of introducing errors in document structure by using these option, we should question their usefulness.</span></li>
+</ul>
 
 <ul>
 	<li style="box-sizing: border-box;"><strong style="box-sizing: border-box;">Cursor-after-element Problems:</strong>&nbsp;It is sometimes difficult to place the cursor beneath inserted elements to continue editing/writing. The section handling should take this into account.&nbsp;<span style="font-size: 17px; line-height: 1.5em;">I think this is an important fix to make because it will have a big impact on those users that aren't able to use the code view to get around the problem. It's easy to imagine their frustration at not being able to continue writing because of this problem.</span></li>
