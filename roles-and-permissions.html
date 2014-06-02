@@ -39,35 +39,69 @@
 <section data-type="sect1">
 <h1>Feature Description</h1>
 
-<p><em>ENTER FEATURE DESCRIPTION HERE</em></p>
+<p>Allow users to manage roles and permissions in a way that supports their workflows and content-access policies.&nbsp;<span style="font-size: 17px; line-height: 1.5em;">Many publishers will use similar role definitions, and we could likely provide a starter solution to cover the most common situations. We should</span><span style="font-size: 17px; line-height: 1.5em;">&nbsp;provide users with an easy way to define custom roles and fine-tune permissions without intervention by O'Reilly staff.</span></p>
 
-<p><em>FEATURE DESCRIPTION TYPICALLY CONSISTS OF AN EXPLANATORY PARAGRAPH OR TWO</em></p>
-
-<p><em>AND ENDS WITH A BULLET LIST LIKE THIS:</em></p>
+<p>The following roles are likely to be fairly common among publishers, but individual permissions may vary from project to project or company to company. I think it's likely that publishers may want to have multiple version of each: for example, they may want a type of <code>Author</code> role that has fairly limited permissions, while another <code>Author</code> role could be granted a wider range of powers, such as creating a new project). The permissions module should give them this flexibility.</p>
 
 <ul>
-	<li><em>Requirement 1</em></li>
-	<li><em>Requirement 2</em></li>
-	<li><em>Requirement 3</em></li>
+	<li>Author</li>
+	<li>Reviewer</li>
+	<li>Editor</li>
+	<li>Production&nbsp;</li>
+	<li>Production Manager</li>
+	<li>Copyeditor</li>
+	<li>Indexer</li>
+	<li>Proofreader</li>
+	<li>Indexer</li>
+	<li>Publisher</li>
+	<li>&lt;custom&gt;</li>
 </ul>
 
-<p>Author/Editor isn't enough granularity. We need read-only roles, and comment-only roles like 'reviewer'. Would be great to allow organizations to label/create their own roles and toggle the read/write/comment flags. This also needs to work on themes. Dan writes BRD.</p>
+<p>A few examples:&nbsp;<code>Author</code> may be an all-powerful role in one company, but fairly weak in another. If a company employs a mix of in-house and external <code>copyeditors</code>, they may wish to define two&nbsp;<code>copyeditor</code> roles.</p>
+
+<p><span style="font-size: 17px; line-height: 1.5em;">The following are permission categories that I think are relevant. We should flesh this list out as part of the initial discussions before development:</span></p>
+
+<ul>
+	<li><span style="font-size: 17px; line-height: 1.5em;">&nbsp;create a new project</span></li>
+	<li><span style="font-size: 17px; line-height: 1.5em;">modify any project in a group</span></li>
+	<li><span style="font-size: 17px; line-height: 1.5em;">delete own projects</span></li>
+	<li><span style="font-size: 17px; line-height: 1.5em;">delete any project in a group</span></li>
+	<li><span style="font-size: 17px; line-height: 1.5em;">download own project</span></li>
+	<li><span style="font-size: 17px; line-height: 1.5em;">download any project in a group</span></li>
+	<li><span style="font-size: 17px; line-height: 1.5em;">create new branch in own project</span></li>
+	<li><span style="font-size: 17px; line-height: 1.5em;">create new branch in any project in a group</span></li>
+	<li><span style="font-size: 17px; line-height: 1.5em;">merge changes in own project</span></li>
+	<li><span style="font-size: 17px; line-height: 1.5em;">merge changes in any project in a group</span></li>
+	<li><span style="font-size: 17px; line-height: 1.5em;">view own project metadata/statistics</span></li>
+	<li><span style="font-size: 17px; line-height: 1.5em;">view metadata/statists of any project in a group</span></li>
+	<li><span style="font-size: 17px; line-height: 1.5em;">invite a new user to own project</span></li>
+	<li><span style="font-size: 17px; line-height: 1.5em;">invite new user to any project in a group</span></li>
+	<li><span style="font-size: 17px; line-height: 1.5em;">invite a user to a group</span></li>
+	<li><span style="font-size: 17px; line-height: 1.5em;">remove collaborator from any project in a group</span></li>
+	<li><span style="font-size: 17px; line-height: 1.5em;">remove collaborator from a group</span></li>
+	<li><span style="font-size: 17px; line-height: 1.5em;">edit build settings (separate from changing a theme)</span></li>
+	<li><span style="font-size: 17px; line-height: 1.5em;">change theme (separate from setting order of chapters in build)</span></li>
+	<li>modify css&nbsp;</li>
+	<li>access git url</li>
+</ul>
+
+<p>I think that breaking down permissions in this way could give us finer control than more simple read/write based permissions.</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
 </section>
 
 <section data-type="sect1">
 <h1>Success Criteria</h1>
 
-<p><em>ENTER SUCCESS CRITERIA HERE</em></p>
-
-<p><em>USUALLY A PARAGRAPH OR TWO EXPLAINING THE CONDITIONS THAT NEED TO BE ACHIEVED IN ORDER TO DEEM THAT THE REQUIREMENTS HAVE BEEN MET.</em></p>
+<p>Users are able to manage their own permissions and roles after an initial introduction to the system and intervention by O'Reilly staff isn't needed.&nbsp;</p>
 </section>
 
 <section data-type="sect1">
 <h1>Maximum Level of Development Effort</h1>
 
-<p><em>ENTER A BRIEF PHRASE ON DEVELOPMENT RESOURCES NEEDED</em></p>
-
-<p><em>e.g., Small (a few hours) Med (a few days) Large (up to two weeks) XLarge (more than two weeks)</em></p>
+<p><i>My guess is medium. I need input from the team.</i></p>
 </section>
 
 <section data-type="sect1">
@@ -103,7 +137,7 @@
 		</tr>
 		<tr>
 			<td class="checkbox">&nbsp;</td>
-			<td>GitLab</td>
+			<td>x GitLab</td>
 			<td class="checkbox">&nbsp;</td>
 			<td><em>ENTER YOUR OWN HERE</em></td>
 		</tr>
