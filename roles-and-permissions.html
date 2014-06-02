@@ -39,9 +39,9 @@
 <section data-type="sect1">
 <h1>Feature Description</h1>
 
-<p>Allow users to manage roles and permissions in a way that supports their workflows and content-access policies.&nbsp;<span style="font-size: 17px; line-height: 1.5em;">Many publishers will use similar role definitions, and we could likely provide a starter solution to cover the most common situations. We should</span><span style="font-size: 17px; line-height: 1.5em;">&nbsp;provide users with an easy way to define custom roles and fine-tune permissions without intervention by O'Reilly staff.</span></p>
+<p>Allow users to manage roles and permissions in a way that supports their workflows and content-access policies. P<span style="font-size: 17px; line-height: 1.5em;">rovide users with an easy way to define custom roles and fine-tune permissions without intervention by O'Reilly staff.</span></p>
 
-<p>The following roles are likely to be fairly common among publishers, but individual permissions may vary from project to project or company to company. I think it's likely that publishers may want to have multiple version of each: for example, they may want a type of <code>Author</code> role that has fairly limited permissions, while another <code>Author</code> role could be granted a wider range of powers, such as creating a new project). The permissions module should give them this flexibility.</p>
+<p>The following roles are likely to be fairly common among publishers, but individual permissions may vary from project to project or company to company. I think it's likely that publishers will want to have multiple versions of each: for example, they may want a type of <code>Author</code> role that has fairly limited permissions, while another <code>Author</code> role could be granted a wider range of powers, such as creating a new project). The permissions module should give them this flexibility.</p>
 
 <ul>
 	<li>Author</li>
@@ -56,9 +56,11 @@
 	<li>&lt;custom&gt;</li>
 </ul>
 
+<p>I would suggest providing a starter solutions with at least some of these roles in place, with reasonable permissions for each, to get them started.</p>
+
 <p>A few examples:&nbsp;<code>Author</code> may be an all-powerful role in one company, but fairly weak in another. If a company employs a mix of in-house and external <code>copyeditors</code>, they may wish to define two&nbsp;<code>copyeditor</code> roles.</p>
 
-<p>For the way O'Reilly works, the roles <code>Copyeditor</code>, <code>Indexer</code>, and <code>Proofreader</code> would have the same permissions. The arguments I can offer for not simplifying this scheme to one role type would be the quick visibility everyone in a project would have through meaningful role names and the possibility that other publishers won't be set up the same way with respect to vendors.</p>
+<p>For the way O'Reilly works, the roles <code>Copyeditor</code>, <code>Indexer</code>, and <code>Proofreader</code> would have the same permissions. The arguments I can offer for not simplifying this scheme to a more generic role would be the quick visibility everyone in a project would have through meaningful role names and the possibility that other publishers won't be set up the same way with respect to vendors.</p>
 
 <p><span style="font-size: 17px; line-height: 1.5em;">The following are permission categories that I think are relevant. We should flesh this list out as part of the initial discussions before development:</span></p>
 
@@ -86,7 +88,7 @@
 	<li>access git url</li>
 </ul>
 
-<p>I think that breaking down permissions in this way could give us finer control than more simple read/write based permissions.</p>
+<p>Breaking down permissions in this way could give us finer control than more simple read/write based permissions, although at the cost of complexity.</p>
 
 <p>&nbsp;</p>
 
