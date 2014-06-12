@@ -1,4 +1,30 @@
 {
-  "files": [],
-  "theme": "oreillymedia/oreilly_brd_theme"
+  "branch": "master",
+  "files": [
+    "better-admin-page.html",
+    "roles-and-permissions.html",
+    "visual-editor-improvements.html"
+  ],
+  "formats": {
+    "pdf": {
+      "version": false,
+      "index": false,
+      "toc": false
+    },
+    "epub": {
+      "index": false,
+      "toc": false,
+      "epubcheck": false
+    },
+    "mobi": {
+      "index": false,
+      "toc": false
+    },
+    "html": {
+      "index": false,
+      "toc": false
+    }
+  },
+  "theme": "oreillymedia/oreilly_brd_theme",
+  "title": "business requirements docs"
 }
